@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html>
+<head>
+  <title>Ruby-Rails Code Academy</title>
+  <link href="http://hungry.academy.com/stylesheets/base.css?1369930751" media="screen" rel="stylesheet" type="text/css" />
+  <link href="http://hungry.academy.com/stylesheets/layout.css?1369930751" media="screen" rel="stylesheet" type="text/css" />
+  <link href="http://hungry.academy.com/stylesheets/skeleton.css?1369930751" media="screen" rel="stylesheet" type="text/css" />
+  <meta name="csrf-param" content="authenticity_token"/>
+  <meta name="csrf-token" content="GraKrB0H4rOTub64TYtqmVKaY5FCMSkhWtQbZLpW8ec="/>
+  <script src="http://hungry.academy.com/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="http://hungry.academy.com/javascripts/effects.js" type="text/javascript"></script>
+  <script src="http://hungry.academy.com/javascripts/dragdrop.js" type="text/javascript"></script>
+  <script src="http://hungry.academy.com/javascripts/controls.js" type="text/javascript"></script>
+  <script src="http://hungry.academy.com/javascripts/rails.js" type="text/javascript"></script>
+  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+</head>
+<body>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+   <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="http://hungry.academy.com/stylesheets/base.css">
+  <link rel="stylesheet" href="http://hungry.academy.com/stylesheets/skeleton.css">
+  <link rel="stylesheet" href="http://hungry.academy.com/stylesheets/layout.css">
+
+  <!-- JS
+  ================================================== -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="http://hungry.academy.com/javascript/jquery.raptorize.1.0.js"></script>
+
+  <!-- For the Konami Code version -->
+  <script type="text/javascript">
+      $(window).load(function() {
+          $('.btn').raptorize({
+              'enterOn' : 'konami-code'
+          });
+      });
+  </script>
+
+</head>
+<body>
+
+
+
+<!-- Primary Page Layout
+================================================== -->
+
+<!-- Delete everything in this .container and get started on your own site! -->
+<div class="container">
+
+  <header class="sixteen columns">
+
+    <h1>Rails Academy</h1>
+    <nav>
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/posts">Articles</a>
+        </li>
+        <li>
+          <a href="static_page/about_us"> About Us</a>
+        </li>
+        <li>
+          <a href="static_page/contact" >Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="sixteen columns content top">
+    <div class="ten columns mod">
+      <div class="video">
+        <iframe src="http://player.vimeo.com/video/45230972?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+    </div>
+    <div class="five columns mod abouttheacademy">
+      <h2>About the Academy:</h2>
+      <p>The Rails Academy is good learning experience. It's your opportunity to push yourself to the limits. At Rails Academy you’ll:</p>
+
+      <ul class="square">
+        <li>Start from scratch.</li>
+        <li>Learn Test Driven Development (BDD and TDD)</li>
+        <li>Work with Git, Github anh Heroku.</li>
+        <li>Learn how to build successful products using software development tools, like Ruby on Rails.</li>
+        <li>Prepare yourself to join Rails's joyable world.</li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="banner">
+  <span>
+  <div class="container bannercontainer">
+    <div class="five columns mod articles offset-by-one">
+      <h2>Recent Articles:</h2>
+      <ul>
+        <li> Active Record Validations</li>
+        <li> Active Record Migration</li>
+        <li> What is Active Record?</li>
+        <li> What is Rails?</li>
+      </ul>
+    </div>
+
+<div class="four columns mod events">
+  <h2>Upcoming Events:</h2>
+  <ul id="calendar-feed"></ul>
+</div>
+
+<div class="five columns mod resources">
+  <h2>Follow Along:</h2>
+  <ul id="follow-along">
+    <li><a href=""> Welcome to Rails Academy </a></li>
+
+  </ul>
+</div>
+</div>
+</span>
+</div>
+<div class="container">
+  <div class="sixteen columns content bottom">
+    <div class="five columns beastimage offset-by-one">
+      <%= image_tag "template_home_rails.jpg" %>
+    </div>
+    <div class="five columns mod quot">
+      <h2>Are You Enthusiastic?</h2>
+      <blockquote  data-author="Yukihiro Matsumoto,Creator of Ruby">
+        <p> Rails is the killer app for Ruby.</p>
+      </blockquote>
+    </div>
+
+  </div>
+  <div class=" footer sixteen columns" align="right">
+    <p>
+      Thanks to <a href ="http://hungryacademy.com"> hungryacademy.com </a> powered by livingsocial & jumpstartlab for the site template
+    </p>
+  </div>
+
+</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
+
